@@ -4,7 +4,7 @@ import pandas as pd
 import sqlite3
 
 # Conectar ao banco de dados SQLite
-conn = sqlite3.connect('data\saldaodainformatica.db')
+conn = sqlite3.connect('..\..\data\saldaodainformatica.db')
 
 # Carregar os dados da tabela 'notebooks' em um DataFrame pandas
 df = pd.read_sql_query("SELECT * FROM notebook", conn)
